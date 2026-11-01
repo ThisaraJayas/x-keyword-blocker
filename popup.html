@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>X Keyword Blocker</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; width: 320px; margin: 12px; color: #111; background: #fff; }
+    h1 { font-size: 16px; margin: 0 0 10px; }
+    textarea { width: 100%; box-sizing: border-box; height: 220px; font: 13px monospace; padding: 6px; }
+    label { display: block; margin: 8px 0; }
+    .row { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+    button { padding: 6px 14px; cursor: pointer; }
+    #status { color: #0a7d32; font-size: 12px; }
+    small { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>X Keyword Blocker</h1>
+  <label><input type="checkbox" id="enabled"> Blocking enabled</label>
+  <label><input type="checkbox" id="wholeWord"> Match whole words only</label>
+  <small>One keyword or phrase per line (case-insensitive).<br>
+    Wrap in "quotes" for whole-word only, e.g. "cow" won't block Moscow.</small>
+  <textarea id="keywords" placeholder="keyword one&#10;another phrase"></textarea>
+  <div class="row">
+    <button id="save">Save</button>
+    <button id="defaults">Restore defaults</button>
+    <span id="status"></span>
+  </div>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
