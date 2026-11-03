@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "X Keyword Blocker",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Hides posts and replies on x.com that contain blocked keywords.",
   "homepage_url": "https://github.com/ThisaraJayas/x-keyword-blocker",
   "permissions": ["storage", "*://x.com/*", "*://twitter.com/*"],
@@ -25,8 +25,11 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "x-keyword-blocker@local",
-      "strict_min_version": "109.0"
+      "id": "x-keyword-blocker@thisarajayas.github.io",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
